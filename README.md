@@ -32,7 +32,7 @@ build from sources and add a link to the library from your project.
 
 Let's say you have a console application and its main class `MyAmazingClass` containing the `public static void Main()` method
 as its entry point. And this class needs to be logged and instrumented, i.e. you need to understand
-how much time methods `MainEntryPoint`, `MyMethod1`, `MyMethod2` and `OtherMethodN` have been executing:
+how much time methods `Main`, `MyMethod1`, `MyMethod2` and `OtherMethodN` have been executing:
 
 ```cs
 public class MyAmazingClass {
@@ -103,7 +103,7 @@ public class MyAmazingClass {
 
 
 And that's it! Now you have logger instance for `MyAmazingClass` class and one can add some logging to those methods of your class you want 
-to analyze, log & trace. Let's add logging to our methods `MainEntryPoint`, `MyMethod1`, `MyMethod2` and `OtherMethodN`:
+to analyze, log & trace. Let's add logging to our methods `Main`, `MyMethod1`, `MyMethod2` and `OtherMethodN`:
 ```cs
 public class MyAmazingClass {
 	// Static logger instance for MyAmazingClass
@@ -161,13 +161,13 @@ public class MyAmazingClass {
 }
 ```
 Now all of the methods are tracked by the `logger` variable and when your class's starts executing
-from `MainEntryPoint` method all the subsequent calls to other methods will be logged and execution 
+from `Main` method all the subsequent calls to other methods will be logged and execution 
 time for every logged method will be collected as well.
 
 _But wait... How can we access and view the collected logs now?_
 
 It's easy, all you need to do is just to choose the right place for accessing the collected logs.
-In our example case a good place for getting the collected logs is the last lines of the `MainEntryPoint` method,
+In our example case a good place for getting the collected logs is the last lines of the `Main` method,
 after `logger.EndMethod()` call:
 ```cs
 	// ...
