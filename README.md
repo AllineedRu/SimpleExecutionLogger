@@ -25,7 +25,7 @@ is already completed, since logging also imposes additional overhead at runtime.
 
 ## Installation
 
-To install the library you will need to install `SimplExecutionLogger` NuGet package for your project or
+To install the library you will need to install `SimpleExecutionLogger` NuGet package for your project or
 build from sources and add a link to the library from your project.
 
 ## Usage
