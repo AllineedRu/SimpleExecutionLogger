@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <Description>A small library that allows you to add logging of methods and their execution steps to your code. You can track how long it took to execute the methods of interest and get a text log containing a stack of calls to methods for which logging is enabled.
+
+In order to start logging the execution of methods in the target class of interest, it is enough to create a logger instance in it and add calls to start logging entry into and exit from the method of interest. You can also add custom steps inside the method with a description of what happens in that step, and this information will also end up in the final log.
+
+To better understand the call stack, the logger provides the ability to indent nested methods that are called from a parent method: thus, when reading the final log, you can understand which parts of the code take the most time and optimize your code.
+
+It is recommended to perform logging at the stage of development and debugging of your application to find bottlenecks or problem areas that may not be optimal in terms of execution time. At the final stage of working on the code, it is recommended to remove method logging and the logger instance from the class being debugged, when the optimization is already completed, since logging also imposes additional overhead at runtime.</Description>
+  </PropertyGroup>
+
+</Project>
