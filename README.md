@@ -168,14 +168,14 @@ public class MyAmazingClass {
 	}
 }
 ```
-Now all of the methods are tracked by the `logger` variable and when your class's starts executing
-from `Main` method all the subsequent calls to other methods will be logged and execution 
+Now all of the methods are tracked by the `logger` variable and when your class starts its execution
+from the `Main` method, all the subsequent calls to other methods will be logged and execution 
 time for every logged method will be collected as well.
 
 _But wait... How can we access and view the collected logs now?_
 
 It's easy, all you need to do is just to choose the right place for accessing the collected logs.
-In our example case a good place for getting the collected logs is the last lines of the `Main` method,
+In our example case a good place for getting the collected logs is the last lines of `Main` method,
 after `logger.EndMethod()` call:
 ```cs
 	// ...
@@ -218,7 +218,7 @@ Collected logs:
 ```
 
 With the help of our `logger` instance now we've got a full information about the methods that
-have been called by our application! Note that for every method we also have a timestamp when this method
+have been called by our application! Note that for every method we have also a corresponding timestamp when this method
 has been started and the timestamp when it has been finished. The duration for every logged method 
 has been also collected. For example, we can see that our `Main` method has been executing for **15 milliseconds**.
 The rest of the methods `MyMethod1`, `MyMethod2`, `OtherMethodN` were too fast because they are empty in our short
@@ -272,7 +272,7 @@ public class MyAmazingClass {
 }
 ```
 
-Now if you run the example application we considered above, you'll get the output like this:
+Now if you run the example application we have considered above, you'll get the output like this:
 ```
 Hello, I'm in MyAmazingClass!
 
@@ -291,8 +291,8 @@ In case your logger instance is defined as a _non-static field_ in the logged cl
 values for available properties is the constructor of your logged class.
 
 Let's say we have another class `MyAnotherAmazingClass` where logger instance is now defined as a
-non-static class variable. In this case we add configuration for custom properties to the non-static
-constructor of the this logged class:
+non-static class variable. In this case we add configuration for custom properties _to the non-static
+constructor_ of the this logged class:
 
 ```cs
 public class MyAnotherAmazingClass {
