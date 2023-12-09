@@ -12,6 +12,19 @@ In order to start logging the execution of methods in the target class of intere
 To better understand the call stack, the logger provides the ability to indent nested methods that are called from a parent method: thus, when reading the final log, you can understand which parts of the code take the most time and optimize your code.
 
 It is recommended to perform logging at the stage of development and debugging of your application to find bottlenecks or problem areas that may not be optimal in terms of execution time. At the final stage of working on the code, it is recommended to remove method logging and the logger instance from the class being debugged, when the optimization is already completed, since logging also imposes additional overhead at runtime.</Description>
+    <Copyright>Maksim Abramkin</Copyright>
+    <PackageProjectUrl>https://allineed.ru</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/AllineedRu/SimpleExecutionLogger</RepositoryUrl>
+    <PackageTags>logger;logging;methods;execution;runtime;duration;</PackageTags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
