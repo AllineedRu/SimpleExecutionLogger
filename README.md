@@ -472,7 +472,7 @@ the log we have information about each such step, as well as an indication of th
 #### ClearLog()
 
 `ExecutionLogger` class has internal string buffer to hold the full log. In case you think that this internal buffer is
-overloaded, you can reset this buffer by calling `ClearLog` method. It will clear this internal buffer, but not
+overloaded, you can reset this buffer by calling `ClearLog` method. It will clear this internal buffer, but note
 that you'll not be able to access the collected records in the log after calling this method:
 ```cs
 	// ... some code where we have already printed the collected log 
