@@ -494,7 +494,7 @@ and clear the internal stack holding the information about the sequence of metho
 
 #### ClearAll()
 
-Method `ClearAll` just calls to methods considered above: `ClearLog` and `ClearLoggedMethodsStack`,
+Method `ClearAll` just calls two methods considered above: `ClearLog` and `ClearLoggedMethodsStack`,
 so call it when you want to clear both the internal string buffer and methods stack:
 ```cs
 	// we're calling ClearAll() at the moment when we want to fully reset the
