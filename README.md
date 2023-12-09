@@ -438,7 +438,7 @@ as a step description:
 	}
 ```
 
-Now let’s run the application and see what the final log of its execution will look like:
+Now let's run the application and see what the final log of its execution will look like:
 ```
 Hello, I'm in MyAmazingClass!
 
