@@ -231,7 +231,7 @@ _before_ your start logging:
 
 | Property  | Data Type | Description | Default value |
 | ------------- | ------------- | ------------- | ------------- |
-|`TabulationPrefix`|string|String, specifying a tab symbo or custom string used for nested methods indentation|`"\t"`|
+|`TabulationPrefix`|string|String, specifying a tab symbol or custom string used for nested methods indentation|`"\t"`|
 |`MethodStartedLogPrefix`|string|Prefix added to the log when entering a method (at the beginning of the method execution)|`" >> Method "`|
 |`MethodEndedLogPrefix`|string|Prefix added to the log when exiting from a method (at the end of the method execution, when returning from method)|`" << Method "`|
 |`MethodStepLogPrefix`|string|Prefix added to the log when logging the specific step within executing method|`" Method "`|
