@@ -7,6 +7,7 @@
 * [Configuration](#configuration)
 * [API](#api)
 	* [API Examples](#api-examples)
+* [Contacts](#contacts)
 * [License](#license)
 
 ## Description
@@ -500,6 +501,15 @@ so call it when you want to clear both the internal string buffer and methods st
 	// state of the logger instance:
 	logger.ClearAll();
 ```
+
+## Contacts
+
+:envelope: If you liked the library and have suggestions for improving functionality, please send your feedback and proposals 
+to [allineed.ru@gmail.com](mailto:allineed@gmail.com)
+
+You can also contact me on Telegram: [https://t.me/maxdamascus](https://t.me/maxdamascus)
+
 ## License
 
 [MIT License](/LICENSE.txt)
+
