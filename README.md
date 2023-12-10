@@ -321,7 +321,7 @@ Below is the list of other available methods in the `ExecutionLogger` class:
 
 | Method  | Description |
 | ------------- | ------------- |
-|`void ClearLog()`|Performs full cleaning for the current logger instance: clears the current log and clears the stack of executing methods|
+|`void ClearLog()`|Performs cleaning of the internal string buffer holding the full log|
 |`void ClearLoggedMethodsStack()`|Clears the stack, containing logged methods. Also resets the current method level to 0 value (indentation/tabulation level)|
 |`void ClearAll()`|Performs full cleaning for the current logger instance: clears the current log and clears the stack of executing methods|
 |`void LogMethodStep(string stepDescription)`|Adds to log the specified step (the description of executed operation) within the execution of the current method.|
